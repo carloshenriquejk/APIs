@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/05/10 10:49:50.000.082,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/05/10 13:15:26.000.212,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/05/31 11:08:47.000.100,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/05/31 11:25:05.000.702,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Administrador\Documents\APIs\Api Json\UMain.pas</Transaction>
+    <Transaction>2022/05/31 11:25:05.000.702,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Administrador\Documents\APIs\Api Json\UMain.dfm</Transaction>
+    <Transaction>2022/05/31 11:25:11.000.761,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Administrador\Documents\APIs\Api Json\Project1.dproj</Transaction>
+    <Transaction>2022/05/31 15:42:14.000.960,=C:\Users\Administrador\Documents\APIs\Api Json\Unit2.pas</Transaction>
+    <Transaction>2022/05/31 16:29:54.000.279,C:\Users\Administrador\Documents\APIs\Api Json\Unit2.dfm=C:\Users\Administrador\Downloads\teste\Unit2.dfm</Transaction>
+    <Transaction>2022/05/31 16:29:54.000.279,C:\Users\Administrador\Documents\APIs\Api Json\Unit2.pas=C:\Users\Administrador\Downloads\teste\Unit2.pas</Transaction>
+    <Transaction>2022/05/31 16:57:16.890,C:\Users\Administrador\Downloads\teste\Unit2.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

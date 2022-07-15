@@ -1,0 +1,94 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 525
+  ClientWidth = 513
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btConfirm: TPanel
+    Left = 106
+    Top = 14
+    Width = 110
+    Height = 34
+    Align = alCustom
+    BevelOuter = bvNone
+    Color = 16024898
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 0
+    object SpConfirm: TSpeedButton
+      Left = 0
+      Top = 0
+      Width = 110
+      Height = 34
+      Align = alClient
+      Caption = 'Criar JSON'
+      Flat = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      OnClick = SpConfirmClick
+    end
+  end
+  object Panel1: TPanel
+    Left = 250
+    Top = 14
+    Width = 110
+    Height = 34
+    Align = alCustom
+    BevelOuter = bvNone
+    Color = 16024898
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 1
+    object SpeedButton1: TSpeedButton
+      Left = 0
+      Top = 0
+      Width = 110
+      Height = 34
+      Align = alClient
+      Caption = 'Ler JSON'
+      Flat = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+  end
+  object Memo1: TMemo
+    Left = 8
+    Top = 57
+    Width = 497
+    Height = 460
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Courier New'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+end

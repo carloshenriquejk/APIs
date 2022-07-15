@@ -1,0 +1,47 @@
+unit UMain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls, System.JSON;
+
+type
+  TForm1 = class(TForm)
+    btConfirm: TPanel;
+    SpConfirm: TSpeedButton;
+    Panel1: TPanel;
+    SpeedButton1: TSpeedButton;
+    Memo1: TMemo;
+    procedure SpConfirmClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.SpConfirmClick(Sender: TObject);
+var
+ jsonObj : TJSONObject;
+begin
+
+  try
+    jsonObj := TJSONObject.Create;
+    jsonObj.AddPair('nome', 'Heber');
+    jsonObj.AddPair('idade', TJSONNumber.Create(40));
+    jsonObj.AddPair('peso', TJSONNumber.create(80.5));
+    Memo1.Lines.Add(jsonObj.ToString);
+
+  finally
+    jsonObj.DisposeOf;
+  end;
+end;
+
+end.

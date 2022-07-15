@@ -1,0 +1,72 @@
+unit UMain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls, System.JSON;
+
+type
+  TForm1 = class(TForm)
+    btConfirm: TPanel;
+    SpConfirm: TSpeedButton;
+    Panel1: TPanel;
+    SpeedButton1: TSpeedButton;
+    Memo1: TMemo;
+    procedure SpConfirmClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.SpConfirmClick(Sender: TObject);
+var
+ jsonObjPed, jsonObjItem : TJSONObject;
+ jsonArray  : TJSONArray;
+begin
+
+  try
+    jsonObjPed := TJSONObject.Create;
+    jsonObjPed.AddPair('Pedido', '1000');
+    jsonObjPed.AddPair('Cliente', '99 coders');
+    jsonObjPed.AddPair('total', TJSONNumber.Create(500.25));
+    jsonObjPed.AddPair('Pendente', TJSONBool.create(true));
+
+    jsonArray  := TJSONArray.Create;
+
+    // object item 1
+    jsonObjItem := TJSONObject.Create;
+    jsonObjItem.AddPair('Produto', 'AAA');
+    jsonObjItem.AddPair('Descrição', 'Produto A');
+    jsonObjItem.AddPair('total', TJSONNumber.Create(1));
+   //------------------------------------
+
+    jsonArray.AddElement(jsonObjItem);
+
+     // object item 2
+    jsonObjItem := TJSONObject.Create;
+    jsonObjItem.AddPair('Produto', 'BBB');
+    jsonObjItem.AddPair('Descrição', 'Produto B');
+    jsonObjItem.AddPair('total', TJSONNumber.Create(5));
+   //------------------------------------
+
+    jsonArray.AddElement(jsonObjItem);
+
+
+    jsonObjPed.AddPair('Itens', jsonObjItem);
+    Memo1.Lines.Add(jsonObjPed.ToString);
+
+  finally
+    jsonObjPed.DisposeOf;
+  end;
+end;
+
+end.
